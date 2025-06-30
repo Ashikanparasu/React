@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Page</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a simple HTML page.</p>
+  <div id ="root"> </div>
+</body>
+<!-- React -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+<!-- ReactDOM -->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script >
+    const heading = React.createElement("h1",{},"React ");
+
+    console.log(heading);
+
+    const root = ReactDom.createRoot(document.getElementByid("root"));
+
+    root.render(heading);
+</script>
+</html>
